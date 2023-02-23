@@ -20,6 +20,10 @@
         <nav>
             <a href="index.html" id="logo">Ölü-TOPLUM</a>
             <div class="nav-link" id="navLink">
+                <!-- menu tusu eklenicekK -->
+                <span class="material-symbols-outlined side" onclick="hideMenu()">
+                    close
+                </span>
                 <ul>
                     <li><a href="#"> ANASAYFA</a></li>
                     <li><a href="https://tr.wikipedia.org/wiki/%C3%9Ctopya"> ÜTOPYA</a></li>
@@ -28,6 +32,9 @@
                     <li><a href="#"> ILETISIM</a></li>
                 </ul>
             </div>
+            <span class="material-symbols-outlined side" onclick="showMenu()">
+                menu
+            </span>
         </nav>
         <div class="text-box">
             <h1>İNSAN VE TOPLUM</h1>
@@ -151,7 +158,16 @@ ve hatiralari</h2>
         <p>Coded with <span></span></p>
     </div>
 </footer>
+<script>
+    function hideMenu(){
+        document.getElementById('navLink').style.right = '-200px';
+    }
 
+    function showMenu(){
+        document.getElementById('navLink').style.right = '0';
+    }
+
+</script>
 </body>
 
 </html>
