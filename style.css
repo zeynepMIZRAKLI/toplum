@@ -11,8 +11,9 @@ body {
 .header {
     min-height: 100vh;
     min-width: 100%;
-    background-size: 100%;
+    background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
     background-image: linear-gradient(to bottom right, rgba(4, 9, 30, 0.9), rgba(4, 9, 30, 0.3)), url('Toplum-5.0.jpg');
 }
 
@@ -44,7 +45,7 @@ nav {
     font-size: 13px;
 }
 
-.nav-link ul li:after{
+.nav-link ul li:after {
     content: '';
     width: 0%;
     height: 2px;
@@ -52,11 +53,13 @@ nav {
     display: block;
     margin: auto;
 }
-.nav-link ul li:hover::after{
-   width: 100%;
-   transition: 0.5s;
+
+.nav-link ul li:hover::after {
+    width: 100%;
+    transition: 0.5s;
 }
-nav .side{
+
+nav .side {
     display: none;
 }
 
@@ -89,45 +92,51 @@ nav .side{
     color: #f0e7e7;
     font-size: 13px;
 }
-.hero-btn:hover{
+
+.hero-btn:hover {
     border: 1px solid #f44336;
     background: #f44336;
     transition: 0.5s;
 }
 
 @media (max-width: 768px) {
-    .text-box h1{
+    .text-box h1 {
         font-size: 25px;
     }
-    nav .side{
+
+    nav .side {
         display: block;
         color: #fff;
         font-size: 22px;
         font-weight: bold;
         cursor: pointer;
     }
-    .nav-link{
-    position: absolute;
-    background: #f44336;
-    height: 100vh;
-    width: 200px;
-    top: 0;
-    /* right: -0px; */
-    text-align: left;
-    z-index: 2;
-    transition: 2s;
-}
-.nav-link ul li{
-display: block;
-}
-.nav-link ul{
-    padding: 30px;
-}
-#logo{
-    font-size: 28px;
-    margin: 16px;
 
-}
+    .nav-link {
+        position: absolute;
+        background: #f44336;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 2s;
+    }
+
+    .nav-link ul li {
+        display: block;
+    }
+
+    .nav-link ul {
+        padding: 30px;
+    }
+
+    #logo {
+        font-size: 28px;
+        margin: 16px;
+
+    }
 }
 
 .products {
@@ -164,9 +173,11 @@ p {
     padding: 20px 12px;
     margin: 2px;
     box-sizing: border-box;
+    transition: 1s;
 }
-.products-col:hover{
-    box-shadow: 0 0 20px 0 rgba(34, 33, 33, 0.3 );
+
+.products-col:hover {
+    box-shadow: 0 0 20px 0 rgba(34, 33, 33, 0.3);
 }
 
 h3 {
@@ -174,11 +185,12 @@ h3 {
     text-align: center;
     margin: 10px 0;
 }
+
 @media (max-width:750px) {
-    .row{
+    .row {
         flex-direction: column;
     }
-    
+
 }
 
 .campus {
@@ -259,14 +271,14 @@ h3 {
     text-align: center;
 }
 
-.comments{
+.comments {
     width: 80%;
     margin: auto;
     padding-top: 100px;
     text-align: center;
 }
 
-.comments-col{
+.comments-col {
     flex-basis: 45%;
     border-radius: 10px;
     background: #fff3f3;
@@ -276,7 +288,7 @@ h3 {
     margin-top: 5%;
 }
 
-.comments-col img{
+.comments-col img {
     height: 44px;
     width: 44px;
     border-radius: 50%;
@@ -285,44 +297,48 @@ h3 {
     margin-right: 10px;
 }
 
-.comments-col h3{
+.comments-col h3 {
     margin-top: 15px;
     text-align: left;
 }
 
-.abone{
+.abone {
     margin: 100px auto;
     width: 80%;
-    background-image: linear-gradient(to bottom right, rgba( 0, 0, 0, 0.7), rgba( 0, 0, 0, 0.4));
+    background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4));
     padding: 100px 0;
     text-align: center;
     border-radius: 10px;
 }
-.abone h2{
+
+.abone h2 {
     color: #fff;
     margin-bottom: 40px;
     padding: 0;
 }
-@media (max-width:700px){
-    .abone h2{ 
-    font-size: 25px;
+
+@media (max-width:700px) {
+    .abone h2 {
+        font-size: 25px;
     }
 }
 
-footer{
+footer {
     text-align: center;
     /* width: 100px; */
     padding: 30px;
 }
-.icon{
+
+.icon {
     font-size: 18px;
     margin: 0;
     padding: 0;
 
 }
-footer a{
+
+footer a {
     text-decoration: none;
     margin: 0;
     padding: 0;
-    
+
 }
